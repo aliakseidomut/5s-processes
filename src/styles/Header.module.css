@@ -1,0 +1,38 @@
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  border-bottom: 1px solid #ffffff85;
+  padding: 0 200px;
+}
+
+.logo {
+  color: #fe6100;
+  font-size: 50px;
+  font-weight: 900;
+  font-style: italic;
+  text-decoration-line: none;
+}
+
+.nav {
+  display: flex;
+  gap: 25px;
+}
+
+.link {
+  color: #ffffff;
+  transition: all 0.1s;
+  font-size: 18px;
+  text-decoration-line: none;
+}
+
+.link:hover {
+  color: #fe6100;
+}
+
+.link_active {
+  color: #fe6100;
+  font-size: 18px;
+  text-decoration-line: none;
+}
