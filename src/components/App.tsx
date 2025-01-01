@@ -1,7 +1,7 @@
-import "@styles/App.css";
+import AppRoutes from "@routes/routes";
 
 function App() {
-  return <></>;
+  return <AppRoutes />;
 }
 
 export default App;
