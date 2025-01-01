@@ -10,14 +10,11 @@
 }
 
 .h1 {
-  margin: 0 auto;
   font-size: 50px;
-  width: 1000px;
 }
 
 .p {
-  padding: 0 200px;
   color: #ffffff;
   font-size: 25px;
-  margin-top: 100px;
+  margin-top: 50px;
 }
