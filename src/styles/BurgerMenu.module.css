@@ -1,0 +1,44 @@
+.burgerMenu {
+  position: relative;
+}
+
+.burgerButton {
+  font-size: 24px;
+  background: none;
+  border: none;
+  z-index: 1001;
+  position: relative;
+  color: #ffffff;
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  right: -20px;
+  background-color: #1a1c21;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  height: 100vh;
+  padding-top: 50px;
+}
+
+.link {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.link_active {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fe6100;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    width: 200px;
+  }
+}
