@@ -15,4 +15,5 @@ export default defineConfig({
       "@types": "/src/types",
     },
   },
+  base: "/5s-processes/",
 });
