@@ -9,6 +9,7 @@ export default function Contacts() {
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
+
     console.log(
       JSON.stringify({
         name: name.value,
@@ -17,9 +18,9 @@ export default function Contacts() {
       })
     );
 
-    name.value = "";
-    email.value = "";
-    message.value = "";
+    name.reset();
+    email.reset();
+    message.reset();
   };
 
   return (
