@@ -10,7 +10,7 @@
 
 ## Деплой
 
-[Deploy]([https://effervescent-cobbler-60e9c8.netlify.app/](https://aliakseidomut.github.io/5s-processes/))
+[Deploy](https://aliakseidomut.github.io/5s-processes/)
 
 ## Скрипты для запуска
 
