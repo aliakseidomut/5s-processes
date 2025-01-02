@@ -4,6 +4,7 @@ import TaskData from "../types/TaskData";
 import useInput from "@utils/useInput";
 import Task from "@components/Task";
 import Modal from "@components/Modal";
+import Filters from "@components/Filters";
 
 export default function Tasks() {
   const taskName = useInput("");
@@ -13,6 +14,7 @@ export default function Tasks() {
   });
   const [editingTask, setEditingTask] = useState<TaskData | null>(null);
   const [showModal, setShowModal] = useState(false);
+  const [statusFilter, setStatusFilter] = useState<string>("");
 
   useEffect(() => {
     localStorage.setItem("tasks", JSON.stringify(tasks));
@@ -50,6 +52,10 @@ export default function Tasks() {
     }
   };
 
+  const filteredTasks = statusFilter
+    ? tasks.filter((task) => task.status === statusFilter)
+    : tasks;
+
   return (
     <main className={`${styles.Tasks} container`}>
       <h2>Tasks</h2>
@@ -65,6 +71,8 @@ export default function Tasks() {
         </button>
       </div>
 
+      <Filters statusFilter={statusFilter} setStatusFilter={setStatusFilter} />
+
       <table className={styles.table}>
         <thead>
           <tr>
@@ -76,7 +84,7 @@ export default function Tasks() {
           </tr>
         </thead>
         <tbody>
-          {tasks.map((task) => (
+          {filteredTasks.map((task) => (
             <Task
               key={task.id}
               task={task}
